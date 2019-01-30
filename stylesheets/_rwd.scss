@@ -1,0 +1,27 @@
+// index.html RWD
+@media (max-width: 768px) {
+  .header-ul{
+    width: 100%;
+  }
+  .p-section-vertical-text{
+    writing-mode: horizontal-tb;
+    line-height: 2;
+  }
+  .section-img-height{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .p-form-padding{
+    padding: 0px 0px;
+  } 
+  .btn-block + .btn-block{
+    margin-top: 0;
+  }
+  .border-md-0{
+    border-left:1px solid $secondary;
+    border-right:1px solid $secondary;
+  }
+  .p-cart-item-border{
+    border: 0px;
+  }
+}
