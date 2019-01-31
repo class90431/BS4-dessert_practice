@@ -13061,5 +13061,8 @@ input::placeholder {
   .p-cart-item-border {
     border: 0px;
   }
+  .p-noReason-mt {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=all.css.map */
