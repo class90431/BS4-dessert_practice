@@ -2,7 +2,6 @@
   background-size: cover;
   background-position: center center;
 }
-
 .header-main-image {
   height: 496px; 
 }
@@ -35,8 +34,7 @@
   margin-top: -1.5rem;
 }
 .p-section-vertical-text{
-  writing-mode: vertical-rl;
-  
+  writing-mode: vertical-rl;  
 }
 .l-list-style-none{
   list-style: none;
@@ -46,18 +44,6 @@
 }
 .l-float-l{
   float: left;
-}
-.list-group-item-action{
-  color: $primary;
-  &:active{
-    background-color: $secondary;
-  }
-  &:hover{
-    background-color: $secondary;
-  }
-  &:focus{
-    background-color: $secondary;
-  }
 }
 .fa-marginLeft{
   margin-left: 50px;

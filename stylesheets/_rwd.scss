@@ -1,4 +1,3 @@
-// index.html RWD
 @media (max-width: 768px) {
   .header-ul{
     width: 100%;
@@ -23,5 +22,8 @@
   }
   .p-cart-item-border{
     border: 0px;
+  }
+  .p-noReason-mt{
+    margin-top: 0;
   }
 }

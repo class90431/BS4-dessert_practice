@@ -12874,22 +12874,6 @@ a.text-btnColor:hover, a.text-btnColor:focus {
   float: left;
 }
 
-.list-group-item-action {
-  color: #3F5D45;
-}
-
-.list-group-item-action:active {
-  background-color: #EAF0ED;
-}
-
-.list-group-item-action:hover {
-  background-color: #EAF0ED;
-}
-
-.list-group-item-action:focus {
-  background-color: #EAF0ED;
-}
-
 .fa-marginLeft {
   margin-left: 50px;
 }
