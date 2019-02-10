@@ -1,51 +1,9 @@
-.bg-cover {
-  background-size: cover;
-  background-position: center center;
-}
-.header-image-context{
-  position: absolute;
-  top: 40px;
-  right: 40px;
-} 
-.p-noReason-mt{
-  margin-top: 95px;
-}
-.p-card-tag{
-  position: absolute;
-  writing-mode: vertical-lr;
-  left: 1.25rem;
-  letter-spacing: 0.4rem;
-}
-.p-card-icon{  
-  position: absolute;
-  top:1.25rem ;
-  right: 1.25rem;
-  font-size: 1.5rem;
-}
 .section-img-height{
   height: 460px; 
   margin-top: -1.5rem;
   margin-bottom: -1.5rem;
 }
-.section-img-title{  
-  margin-top: -1.5rem;
-}
-.p-section-vertical-text{
-  writing-mode: vertical-rl;  
-}
-.l-list-style-none{
-  list-style: none;
-}
-.p-ul-marginTop{
-  margin-top: 115px;
-}
-.l-float-l{
-  float: left;
-}
-.fa-marginLeft{
-  margin-left: 50px;
-} 
-.icon-position{
+.iconLogin-position{
   position: absolute;
   top: 1.25rem;
   left: 20px;
@@ -71,87 +29,8 @@ input::placeholder {
   font-size:1rem;
   line-height: normal;
   color: #8DA291 !important;  
-}  
-.p-form-padding{
-  padding: 40px 30px;
-}
-.p-member-padding{
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.p-link-margin{
-  margin-bottom: 36px;
-} 
-.p-cart-h1-marginBottom{
-  margin-bottom: 33px;
-}
-.header-list{
-  width: 33.333%;
-  height: 256px;
-  overflow: hidden;
-  position: relative;
-}
-.header-ul{
-  width: 82.97872%;
-}
-.header-li-img{ 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-  filter: blur(5px); 
-}
-.header-li-img180{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-  filter: blur(5px); 
-  transform: rotate(180deg);
-}
-.header-li-bg{
-  background-color: $btnColor; 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-  opacity: .8; 
-}
-.header-list-a{  
-  display: block; 
-  height: 100%;
-}
-.header-p{
-  z-index: 500;
-  position: relative;
-  writing-mode: vertical-lr;
-  letter-spacing:0.5rem;
-}
-.header-li-bg-primary{
-  background-color:$primary;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-  opacity: .8; 
-}
-.header-ul-position{
-  margin-top: -9.5%;
-}
-.p-link-height{
-  height: 56px;
 }
 .p-cart-item-border{
   border-bottom: 2px solid $secondary;
   border-top: 2px solid $secondary;
-} 
-.btn{
-  font-size: 1.5rem;
-} 
-.check-mb{
-  margin-bottom: 8px;
 } 

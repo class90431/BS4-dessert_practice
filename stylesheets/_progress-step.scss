@@ -4,7 +4,6 @@
   -o-border-radius: $radius;
   border-radius: $radius;
 }
-
 $color-step-grey: #cfcfcf;
 $color-step-green: #29A414;
 $color-progress-green: #75CD00;
@@ -23,7 +22,6 @@ $color-progress-green: #75CD00;
 //   flex: 2 0 auto;
 //   width: 100%;
 // }
-
 $tracker-colour: #cfcfcf;
 $tracker-colour-complete: #29A414;
 $progress-marker-complete: #75CD00;
@@ -32,7 +30,6 @@ $tracker-marker-colour: #fff;
 $tracker-border-size: 2px;
 $tracker-line-size: 8px;
 $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
-
 .progress-tracker {
   display: flex;
   margin: 40px auto;
@@ -42,7 +39,6 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   // padding-left: 38px;
   // padding-right: 38px;
 }
-
 .progress-step {
   display: block;
   position: relative;
@@ -50,11 +46,9 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   padding: 0;
   min-width: $tracker-marker-size;
 }
-
 .progress-step:last-child {
   flex-grow: 0;
 }
-
 .progress-step:not(:last-child)::after {
   content: '';
   display: block;
@@ -86,23 +80,17 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   height: $tracker-marker-size;
   font-weight: bold;
   border-radius: 50%;
-
 }
-
 .progress-step .progress-marker {
   color: $primary;
   background-color: $secondary;
 }
-
 .progress-step::after {
   background-color: $secondary;
 }
-
-
 .progress-step.is-active .progress-marker {
     background-color: $secondary;
 }
-
 .progress-step.is-complete .progress-marker {
   background-color: $secondary;
 }
@@ -110,12 +98,10 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   background: $primary; 
   // color: #000;
 }
-
 // .progress-step.is-complete::after {
 //   background-color: $tracker-colour;
 //   background: linear-gradient(to right,$progress-marker-complete, $tracker-colour);
 // }
-
 .progress-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -126,26 +112,19 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   padding-right: 0;
   padding-left: 0;
   transform: translateX(calc(-50% + (#{$tracker-marker-size}/2)));
- 
 }
-
 .progress-text.multi-line {
   display: flex;
   flex-direction: column;
   transform: translateX(calc(-50% + (#{$tracker-marker-size}/2))) translateY(-14px)
 }
-
 .progress-marker.multi-line{
   transform: translateY(-12px);
 }
-
-
 .count:before { 
     content: counter(item) " "; 
     counter-increment: item;
   }
-
-
 .checkmark:after {
   content: " ";
   counter-increment: item;
