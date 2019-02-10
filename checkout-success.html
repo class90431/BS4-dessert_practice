@@ -28,13 +28,13 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link text-primary  " href="index.html">首頁 <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-primary " href="index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary  " href="product.html">甜點</a>
+            <a class="nav-link text-primary " href="product.html">甜點</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary font-weight-bold" href="login.html">登入</a>
+            <a class="nav-link text-primary" href="login.html">登入</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary  px-0 fa-marginLeft" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -61,66 +61,45 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="product.html">甜點</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="login.html">登入</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Content -->
-  <section class="container my-md-8 px-sm-2 px-0">
-    <div class="form-row justify-content-center flex-column-reverse flex-md-row">
-      <div class="col-md-5 p-0">
-        <form class="bg-primary container px-6 pb-md-5 pb-6 pt-md-0 pt-6">
-          <p class="h1 font-weight-bold text-center text-secondary p-member-padding d-none d-md-block">會員登入</p>
-          <div class="form-group" style="position: relative;">
-            <input type="email" class="form-control form-control-lg border-0 rounded-0 p-0 pl-2 pb-1" style="background-color:#EAF0ED;text-indent: 2rem;height: 56px;"
-              id="email" aria-describedby="emailHelp" placeholder="電子信箱/手機號碼">
-            <i class="fas fa-user icon-position text-primary"></i>
-          </div>
-          <div class="form-group" style="position: relative;">
-            <input type="password" class="form-control form-control-lg border-0 rounded-0 p-0 pl-2 pb-1" style="background-color:#EAF0ED;text-indent: 2rem;height: 56px;line-height:56px;"
-              id="password" placeholder="請輸入使用者密碼">
-            <div>
-              <i class="fas fa-key icon-position text-primary"></i>
-            </div>
-          </div>
-          <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input " id="customCheck1">
-            <label class="custom-control-label text-secondary" for="customCheck1">記住我</label>
-          </div>
+  <header class="container   ">
 
-        </form>
-        <button type="submit" class="btn btn-btnColor btn-block rounded-0 p-3 text-primary font-weight-bold">
-          登入帳號
-        </button>
-      </div>
-      <div class="col-md-5 p-0">
-        <form class="bg-secondary container p-form-padding">
-          <p class="h3 text-textColor text-center p-link-margin d-none d-md-block">—— 連結社群帳號 ——</p>
-          <p class="h1 font-weight-bold text-center text-secondary bg-primary d-md-none d-block py-6 mb-0">會員登入</p>
-          <div class="d-flex flex-md-column p-md-0 p-6">
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center p-3 p-link-height">
-              <img src="./images/ic-facebook-logotype.svg" alt="" class="img-fluid"></a>
-            </a>
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center my-md-3 p-2 p-link-height border-md-0">
-              <img src="./images/ic-google.svg" alt="" class="img-fluid">
-            </a>
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center mt-0 p-3 p-link-height">
-              <img src="./images/ic-yahoo.svg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </form>
-      </div>
+    <div class="bg-cover row justify-content-center" style="background-image:url(https://bit.ly/2P7GhNd);height: 460px;">
+      <div class="col-4">
+          <ol class="progress-tracker mt-13">
+            <li class="progress-step is-active line-color">
+              <!-- <span class=" progress-text">New</span> -->
+              <span class=" progress-marker checkmark progress-color checkmark-color"></span>
+            </li>
+            <li class="progress-step is-active line-color">
+              <!-- <span class=" progress-text">In Review</span> -->
+              <span class=" progress-marker checkmark progress-color checkmark-color"></span>
+            </li>
+            <li class="progress-step is-active line-color">
+              <!-- <span class=" progress-text">Complete</span> -->
+              <span class=" progress-marker checkmark progress-color checkmark-color"></span>
+            </li>
+          </ol>
+          <img src="./images/lg-付款成功.svg" alt="" style="width:63%;" class="ml-auto mr-auto d-block mb-7">
+          <a href="index.html" class="btn btn-btnColor btn-block rounded-0 py-3 text-primary font-weight-bold d-md-block d-none">繼續逛逛</a>
+        </div>
     </div>
-  </section>
+  </header>
+  <div class=" d-md-none d-block">    
+    <a href="index.html" class="btn btn-btnColor btn-block rounded-0 py-3 text-primary font-weight-bold">繼續逛逛</a>
+  </div>
 
 
   <!-- Footer -->

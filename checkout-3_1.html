@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>甜點電商-產品</title>
+  <title>甜點電商-首頁</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/all.css">
@@ -27,17 +27,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-primary  " href="index.html">首頁 <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary  " href="product.html">甜點</a>
+            <a class="nav-link text-primary" href="product.html">甜點</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary font-weight-bold" href="login.html">登入</a>
+            <a class="nav-link text-primary" href="login.html">登入</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary  px-0 fa-marginLeft" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a class="nav-link text-primary px-0 fa-marginLeft" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
           </li>
         </ul>
       </div>
@@ -61,13 +61,13 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="product.html">甜點</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="login.html">登入</a>
           </li>
         </ul>
@@ -77,52 +77,110 @@
   <!-- Content -->
   <section class="container my-md-8 px-sm-2 px-0">
     <div class="form-row justify-content-center flex-column-reverse flex-md-row">
-      <div class="col-md-5 p-0">
+      <div class="col-md-7 px-md-2">
         <form class="bg-primary container px-6 pb-md-5 pb-6 pt-md-0 pt-6">
-          <p class="h1 font-weight-bold text-center text-secondary p-member-padding d-none d-md-block">會員登入</p>
-          <div class="form-group" style="position: relative;">
-            <input type="email" class="form-control form-control-lg border-0 rounded-0 p-0 pl-2 pb-1" style="background-color:#EAF0ED;text-indent: 2rem;height: 56px;"
-              id="email" aria-describedby="emailHelp" placeholder="電子信箱/手機號碼">
-            <i class="fas fa-user icon-position text-primary"></i>
-          </div>
-          <div class="form-group" style="position: relative;">
-            <input type="password" class="form-control form-control-lg border-0 rounded-0 p-0 pl-2 pb-1" style="background-color:#EAF0ED;text-indent: 2rem;height: 56px;line-height:56px;"
-              id="password" placeholder="請輸入使用者密碼">
-            <div>
-              <i class="fas fa-key icon-position text-primary"></i>
+          <!-- Progress Step Start -->
+          <!-- 來源 https://codepen.io/suzoliver911/pen/bvmBPr -->
+          <div class="row justify-content-between  align-items-center">
+            
+            <div class="col-6 ">
+              <p class="h1 font-weight-bold text-left text-secondary p-member-padding">發票</p>
+            </div>
+            <div class="col-6"> 
+                <ol class="progress-tracker">
+
+                  <li class="progress-step is-complete">
+                    <!-- <span class=" progress-text">New</span> -->
+                    <span class=" progress-marker checkmark"></span>
+
+                  </li>
+
+                  <li class="progress-step is-active">
+                    <!-- <span class=" progress-text">In Review</span> -->
+                    <span class=" progress-marker checkmark"></span>
+
+                  </li> 
+
+                  <li class="progress-step">
+                    <!-- <span class=" progress-text">Complete</span> -->
+                    <span class=" progress-marker count"></span>
+                  </li>
+                  
+                </ol> 
             </div>
           </div>
-          <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input " id="customCheck1">
-            <label class="custom-control-label text-secondary" for="customCheck1">記住我</label>
-          </div>
-
+          <!-- Pregress Step End -->
+          <div class="form-row px-1">
+              <div class="form-group col-6 p-0">
+                <a href="#" class="btn btn-secondary text-primary font-weight-bold d-flex justify-content-center align-items-center rounded-0" style="height:56px;">電子發票</a>
+              </div>
+              <div class="form-group col-6 p-0"> 
+                <a href="checkout-3_2.html" class="btn btn-primary text-secondary font-weight-bold d-flex justify-content-center align-items-center rounded-0 border" style="height:56px;">郵寄發票</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tel" class="text-secondary font-weight-bold h4">電子郵件信箱</label>
+              <input type="tel" class="form-control rounded-0 border-0" id="tel" placeholder="example@email.com"style="height: 56px;background-color:#EAF0ED;">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="inputCity" class="text-secondary font-weight-bold">統一編號（選填）</label>
+                  <input type="text" class="form-control rounded-0 border-0" id="inputAddress" placeholder="12345678"style="height: 56px;background-color:#EAF0ED;">
+                </div>                
+            </div> 
         </form>
-        <button type="submit" class="btn btn-btnColor btn-block rounded-0 p-3 text-primary font-weight-bold">
-          登入帳號
-        </button>
+        <div class="bg-btnColor text-center">
+          <a href="checkout-success.html"  class="btn btn-btnColor btn-block rounded-0 py-3 text-primary font-weight-bold">
+            確認結帳
+          </a>
+        </div>
       </div>
-      <div class="col-md-5 p-0">
-        <form class="bg-secondary container p-form-padding">
-          <p class="h3 text-textColor text-center p-link-margin d-none d-md-block">—— 連結社群帳號 ——</p>
-          <p class="h1 font-weight-bold text-center text-secondary bg-primary d-md-none d-block py-6 mb-0">會員登入</p>
-          <div class="d-flex flex-md-column p-md-0 p-6">
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center p-3 p-link-height">
-              <img src="./images/ic-facebook-logotype.svg" alt="" class="img-fluid"></a>
-            </a>
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center my-md-3 p-2 p-link-height border-md-0">
-              <img src="./images/ic-google.svg" alt="" class="img-fluid">
-            </a>
-            <a href="#" class="btn bg-white btn-block rounded-0 d-flex justify-content-center mt-0 p-3 p-link-height">
-              <img src="./images/ic-yahoo.svg" alt="" class="img-fluid">
-            </a>
+
+      <div class="col-md-4 px-2 d-md-block d-none">   
+        <div class="border">
+          <p class="h4 text-textColor bg-secondary text-center font-weight-bold mb-0  py-3">訂單摘要</p> 
+          <table class="table table-borderless">
+            <tbody class="text-textColor">
+              <tr>
+                <td>小計</td>
+                <td class="text-right">NT$ 2,700</td>
+              </tr>
+              <tr>
+                <td>運費</td>
+                <td class="text-right">NT$ 300</td>
+              </tr>
+              <tr>
+                <td class="h5 font-weight-bold">總計</td>
+                <td class="text-right h5 font-weight-bold">NT$ 3,000</td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>  
+
+        <div class="mt-2 border"> 
+          <p class="h4 text-textColor bg-secondary text-center font-weight-bold mb-0  py-3">購物清單</p>  
+          <div class="row">
+            <div class="container px-4">
+            <ul class="list-unstyled">
+              <li class="row justify-content-around my-3">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2zKOP7w);width: 110px;height: 80px;"></div>
+                <div class="flex-column d-flex justify-content-center text-textColor"><p class="mb-0">焦糖瑪卡龍&nbsp;&nbsp;(2)</p> <p class="h5 mb-0">NT$ 900</p></div>
+              </li> 
+              <li class="row justify-content-around mb-3">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2zKOP7w);width: 110px;height: 80px;"></div>
+                <div class="flex-column d-flex justify-content-center text-textColor"><p class="mb-0">焦糖瑪卡龍&nbsp;&nbsp;(2)</p> <p class="h5 mb-0">NT$ 900</p></div>
+              </li> 
+              <li class="row justify-content-around">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2zKOP7w);width: 110px;height: 80px;"></div>
+                <div class="flex-column d-flex justify-content-center text-textColor"><p class="mb-0">焦糖瑪卡龍&nbsp;&nbsp;(2)</p> <p class="h5 mb-0">NT$ 900</p></div>
+              </li> 
+            </ul>
+            </div>
           </div>
-        </form>
+        </div>      
       </div>
     </div>
   </section>
-
-
   <!-- Footer -->
   <footer>
     <div class="container-fluid  bg-primary py-md-1">

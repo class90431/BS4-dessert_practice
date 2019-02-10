@@ -2,9 +2,6 @@
   background-size: cover;
   background-position: center center;
 }
-.header-main-image {
-  height: 496px; 
-}
 .header-image-context{
   position: absolute;
   top: 40px;
@@ -50,7 +47,7 @@
 } 
 .icon-position{
   position: absolute;
-  top: 1rem;
+  top: 1.25rem;
   left: 20px;
 }
 .iconEmail-position{
@@ -63,6 +60,12 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+.iconCard-position{
+  position: absolute;
+  top: 3.2rem;
+  right:2rem;
+  font-size: 20px;
 }
 input::placeholder {
   font-size:1rem;
@@ -145,4 +148,10 @@ input::placeholder {
 .p-cart-item-border{
   border-bottom: 2px solid $secondary;
   border-top: 2px solid $secondary;
-}
+} 
+.btn{
+  font-size: 1.5rem;
+} 
+.check-mb{
+  margin-bottom: 8px;
+} 
