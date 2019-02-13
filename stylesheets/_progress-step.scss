@@ -39,30 +39,6 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   // padding-left: 38px;
   // padding-right: 38px;
 }
-.progress-step {
-  display: block;
-  position: relative;
-  flex: 1 1 0%;
-  padding: 0;
-  min-width: $tracker-marker-size;
-}
-.progress-step:last-child {
-  flex-grow: 0;
-}
-.progress-step:not(:last-child)::after {
-  content: '';
-  display: block;
-  position: absolute;
-  // z-index: -10;
-  // top: $line-offset;
-  top: 1rem;
-  left: 30px;
-  // width: calc(100% - 45px - 10px);
-  width: 80%;
-  // height: $tracker-line-size;
-  height: 2px;
-  @include rounded-corners(4px); 
-}
 // .progress-tracker .progress-step:not(:last-child)::after{
 //   background: $primary;
 // }
@@ -81,23 +57,47 @@ $line-offset: calc((#{$tracker-marker-size}/2) + 0.9em);
   font-weight: bold;
   border-radius: 50%;
 }
-.progress-step .progress-marker {
-  color: $primary;
-  background-color: $secondary;
-}
-.progress-step::after {
-  background-color: $secondary;
-}
-.progress-step.is-active .progress-marker {
+.progress-step {
+  display: block;
+  position: relative;
+  flex: 1 1 0%;
+  padding: 0;
+  min-width: $tracker-marker-size;
+  &:last-child {
+    flex-grow: 0;
+  }
+  &:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    // z-index: -10;
+    // top: $line-offset;
+    top: 1rem;
+    left: 30px;
+    // width: calc(100% - 45px - 10px);
+    width: 80%;
+    // height: $tracker-line-size;
+    height: 2px;
+    @include rounded-corners(4px); 
+  }
+  &::after {
     background-color: $secondary;
-}
-.progress-step.is-complete .progress-marker {
-  background-color: $secondary;
-}
-.progress-step.is-active .progress-color{
-  background: $primary; 
-  // color: #000;
-}
+  }
+  & .progress-marker {
+    color: $primary;
+    background-color: $secondary;
+  } 
+  &.is-active .progress-marker {
+    background-color: $secondary;
+  }
+  &.is-complete .progress-marker {
+    background-color: $secondary;
+  }
+  &.is-active .progress-color{
+    background: $primary; 
+    // color: #000;
+  }
+}     
 // .progress-step.is-complete::after {
 //   background-color: $tracker-colour;
 //   background: linear-gradient(to right,$progress-marker-complete, $tracker-colour);
